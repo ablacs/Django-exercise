@@ -17,6 +17,7 @@ class Post(models.Model):
 
     class Meta:
         ordering = ['-created_on']
+        app_label = 'core'
 
     def __str__(self):
         return self.title
